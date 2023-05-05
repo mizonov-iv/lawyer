@@ -15,7 +15,7 @@
         Логотип
       </a>
         <ul
-            class=" w-3/4 md:w-screen h-screen md:h-fit absolute top-0 bg-slate-50 left-0 md:static md:flex z-10 border-2"
+            class=" w-3/4 md:w-6/12 h-screen md:h-fit absolute top-0 bg-slate-50 left-0 md:static md:flex z-10 border-2"
             :class="burgerToggle ? 'block' : 'hidden'"
         >
           <li class="p-3 hover:scale-110 transition duration-700 ease-in-out">
@@ -31,7 +31,7 @@
             <a href="">Контакты</a>
           </li>
         </ul>
-      <button class="block w-20 md:w-60 p-1 bg-slate-400 text-white rounded">Получить консультацию</button>
+      <button class="block w-20 md:w-60 p-1 bg-slate-400 text-white rounded hover:scale-110 transition duration-700 ease-in-out">Получить консультацию</button>
     </nav>
   </section>
 </template>
