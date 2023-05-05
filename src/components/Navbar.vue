@@ -14,23 +14,23 @@
       <a href="" class="text-xl">
         Логотип
       </a>
-      <ul
-          class=" w-3/4 h-screen absolute top-0 bg-slate-50 left-0 md:static md:flex z-10 border-2"
-          :class="burgerToggle ? 'block' : 'hidden'"
-      >
-        <li class="p-2">
-          <a href="">Услуги</a>
-        </li>
-        <li class="p-2">
-          <a href="">О нас</a>
-        </li>
-        <li class="p-2">
-          <a href="">Отзывы</a>
-        </li>
-        <li class="p-2">
-          <a href="">Контакты</a>
-        </li>
-      </ul>
+        <ul
+            class=" w-3/4 md:w-screen h-screen md:h-fit absolute top-0 bg-slate-50 left-0 md:static md:flex z-10 border-2"
+            :class="burgerToggle ? 'block' : 'hidden'"
+        >
+          <li class="p-3 hover:scale-110 transition duration-700 ease-in-out">
+            <a href="">Услуги</a>
+          </li>
+          <li class="p-3 hover:scale-110 transition duration-700 ease-in-out">
+            <a href="">О нас</a>
+          </li>
+          <li class="p-3 hover:scale-110 transition duration-700 ease-in-out">
+            <a href="">Отзывы</a>
+          </li>
+          <li class="p-3 hover:scale-110 transition duration-700 ease-in-out">
+            <a href="">Контакты</a>
+          </li>
+        </ul>
       <button class="block w-20 md:w-60 p-1 bg-slate-400 text-white rounded">Получить консультацию</button>
     </nav>
   </section>
@@ -43,5 +43,13 @@ const burgerToggle = ref(false)
 </script>
 
 <style scoped>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
 
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
 </style>
