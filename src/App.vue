@@ -10,25 +10,35 @@
       <ul class="flex justify-between mt-10 mb-10">
         <li class="w-1/8 text-center" v-for="item in numbers">
           <p class="m-2">{{item.title}}</p>
-          <hr>
+          <hr class="bg-slate-950	">
           <p class="m-2">{{item.subtitle}}</p>
         </li>
       </ul>
     </main>
   </section>
 
-  <section class="container mx-auto px-40">
-    <ul class="flex justify-center">
-      <li class="mx-4 px-10 border-2" v-for="item in services">
-        <h2>{{item.title}}</h2>
-        <div>
-          <p>{{item.subtitle}}</p>
+  <section class="container mx-auto px-40 mt-8 border-2	p-4">
+    <ul class="flex justify-center	">
+      <li class="mx-4 px-10	">
+        <h2 class="m-2 text-lg uppercase text-neutral-500	">Услуги для физических лиц</h2>
+        <div class="bg-[url('/img/services-to-individuals.webp')] bg-image pt-24 rounded-md h-32 w-80 hover:scale-110 duration-700">
+          <p class="text-white text-xl ml-4">Банкротство физических лиц</p>
+        </div>
+      </li>
+      <li class="mx-4 px-10	">
+        <h2 class="m-2 text-lg uppercase text-neutral-500	">Услуги для юридических лиц</h2>
+        <div class="bg-[url('/img/oficce.jpg')] bg-image pt-24 rounded-md h-32 w-80 hover:scale-110 duration-700">
+          <p class="text-white text-xl ml-4">Ликвидация компаний</p>
         </div>
       </li>
     </ul>
   </section>
 
-
+  <section>
+    <header>
+      <h2></h2>
+    </header>
+  </section>
 
   <section class="text-center border-2">
     <h2>Footer</h2>
