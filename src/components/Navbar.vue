@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto text-center border-2 md:px-40 py-4 fixed top-0 left-0 right-0">
+  <section class="container mx-auto text-center border-2 md:px-40 py-4 ">
     <nav class="flex justify-between px-4">
       <div class="md:hidden z-20" v-if="!burgerToggle" @click.prevent="burgerToggle = true">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -12,10 +12,10 @@
         </svg>
       </div>
       <a href="" class="text-xl">
-        Логотип
+        <img class="w-14" src="/logo.png" alt="">
       </a>
         <ul
-            class=" w-3/4 md:w-6/12 h-screen md:h-fit absolute top-0 bg-slate-50 left-0 md:static md:flex z-10 border-2"
+            class=" w-3/4 md:w-6/12 h-screen md:h-fit absolute top-0 left-0 md:static md:flex z-10 border-2"
             :class="burgerToggle ? 'block' : 'hidden'"
         >
           <li class="p-3 hover:scale-110 transition duration-700 ease-in-out">
