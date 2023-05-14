@@ -1,3 +1,7 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,3 +11,4 @@
         @apply bg-no-repeat	bg-cover bg-center;
     }
 }
+
