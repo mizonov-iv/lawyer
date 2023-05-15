@@ -1,9 +1,9 @@
 <template>
-  <section class="text-center bg-slate-300 h-fit p-4 px-10">
+  <section class="text-center bg-slate-300 h-fit p-4 px-4" id="footer">
     <header>
-      <router-link to="/" class="text-xl">
+      <a href="/" class="text-xl">
         <img class="block mx-auto w-14 mb-4" src="/logo.png" alt="">
-      </router-link>
+      </a>
     </header>
     <main>
         <p class="mb-2">Телефон: <a href="">+7-999-999-99-99</a></p>
