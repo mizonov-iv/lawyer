@@ -15,7 +15,7 @@
         <img class="w-14" src="/logo.png" alt="">
       </a>
         <ul
-            class=" w-3/4 md:w-6/12 h-screen py-10 sm:py-0 md:h-fit absolute top-0 left-0 md:static md:flex z-10 bg-gray-300"
+            class=" w-3/4 md:w-6/12 h-screen py-10 sm:py-0 md:h-fit absolute top-0 left-0 md:static md:flex z-10 bg-gray-300 sm:bg-inherit"
             :class="burgerToggle ? 'block' : 'hidden'"
         >
           <li class="p-3 hover:scale-110 transition duration-700 ease-in-out">
