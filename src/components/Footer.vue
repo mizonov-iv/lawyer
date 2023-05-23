@@ -7,7 +7,7 @@
     </header>
     <main>
         <p class="mb-2">Телефон: <a href="">+7-999-999-99-99</a></p>
-        <p class="mb-2">Почта: <a href="">help-lowyer@mail.ru</a></p>
+        <p class="mb-2">Почта: <a href="mailto:prvopros@bk.ru">prvopros@bk.ru</a></p>
         <p class="mb-2">Адрес: <a href="">Екатеринбург, ул. Ленина, д. 100</a></p>
         <p class="mb-2">Мы в социальных сетях: <a href="">ВКонтакте</a></p>
     </main>
