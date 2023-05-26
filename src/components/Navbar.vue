@@ -12,7 +12,7 @@
         </svg>
       </div>
       <a href="/" class="text-xl">
-        <img class="w-14" src="/logo.png" alt="">
+        <img class="w-32" src="/logo.jpeg" alt="">
       </a>
         <ul
             class=" w-3/4 md:w-6/12 h-screen py-10 sm:py-0 md:h-fit absolute top-0 left-0 md:static md:flex z-10 bg-gray-300 sm:bg-inherit"
@@ -38,15 +38,38 @@
             <a href="#footer">Контакты</a>
           </li>
         </ul>
-      <button class="block w-32 md:w-60 p-1 bg-slate-400 text-white rounded hover:scale-110 transition duration-700 ease-in-out drop-shadow-2xl">Получить консультацию</button>
+      <button
+          class="block w-32 md:w-60 p-1 bg-slate-400 text-white rounded hover:scale-110 transition duration-700 ease-in-out drop-shadow-2xl"
+          @click="openContactModal"
+      >
+        Получить консультацию
+      </button>
     </nav>
   </section>
+
+  <!-- CONTACT MODAL -->
+  <div
+      class="h-screen w-screen flex flex-col justify-center	content-center	"
+      v-if="contactModalIsOpen"
+  >
+    <ContactForm/>
+  </div>
+
 </template>
 
 <script setup>
 import {ref} from "vue";
+import ContactForm from "./ContactForm.vue";
 
 const burgerToggle = ref(false)
+
+const contactModalIsOpen = ref(false)
+
+
+const openContactModal = () => {
+  contactModalIsOpen.value = true
+}
+
 </script>
 
 <style scoped>

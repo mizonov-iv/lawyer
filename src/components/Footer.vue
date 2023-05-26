@@ -2,7 +2,7 @@
   <section class="text-center bg-slate-300 h-fit p-4 px-4" id="footer">
     <header>
       <a href="/" class="text-xl">
-        <img class="block mx-auto w-14 mb-4" src="/logo.png" alt="">
+<!--        <img class="block mx-auto w-32 mb-4" src="/logo.jpeg" alt="">-->
       </a>
     </header>
     <main>
