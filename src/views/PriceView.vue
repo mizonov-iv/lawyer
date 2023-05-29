@@ -1,7 +1,7 @@
 <template>
   <section class="container mx-auto px-40">
     <header>
-      <h2 class="m-4 font-bold text-xl	tracking-wide	">Цены на предотавляемые услуги</h2>
+      <h2 class="m-4 font-bold text-xl	tracking-wide	">Перечень услуг</h2>
     </header>
     <main>
       <ul class="text-justify">

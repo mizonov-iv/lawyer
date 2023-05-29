@@ -1,9 +1,8 @@
 <template>
   <Navbar/>
-
-  <section class="container mx-auto md:px-40 h-screen flex flex-col justify-start md:justify-center bg-[url('/img/3.JPG')] bg-image" id="main">
-    <header class="ml-14 mt-8">
-      <h1 class="text-4xl	md:text-7xl font-bold">Доверенное лицо <br> в области <br> в Екатеринбурге</h1>
+  <section class="container mx-auto md:px-40 h-screen flex flex-col justify-start md:justify-start bg-[url('/img/3.png')] bg-image" id="main">
+    <header class="mt-8">
+      <h1 class="text-4xl	md:text-7xl font-bold text-center md:text-right text-slate-700">Доверенное лицо <br> в области права <br> в Екатеринбурге</h1>
     </header>
   </section>
 
@@ -11,7 +10,7 @@
 
   <section class="container mx-auto px-4 md:px-40 mt-10" id="services">
     <header>
-      <h2 class="m-4 font-bold text-xl	tracking-wide">Предмет деятельности</h2>
+      <h2 class="m-4 font-bold text-xl	tracking-wide">Перечень услуг</h2>
     </header>
     <main>
       <ul class="text-justify">

@@ -23,7 +23,7 @@
           </li>
           <hr class="w-4 bg-slate-600	mx-auto border-2 sm:hidden">
           <li class="p-3 hover:scale-110 transition duration-700 ease-in-out">
-            <a href="#services">Услуги</a>
+            <a href="#services">Перечень услуг</a>
           </li>
           <hr class="w-4 bg-slate-600	mx-auto border-2 sm:hidden">
           <li class="p-3 hover:scale-110 transition duration-700 ease-in-out">
@@ -49,10 +49,12 @@
 
   <!-- CONTACT MODAL -->
   <div
-      class="h-screen w-screen flex flex-col justify-center	content-center	"
+      class="h-screen w-screen flex flex-col justify-center	content-center px-4"
       v-if="contactModalIsOpen"
   >
-    <ContactForm/>
+    <ContactForm
+        @closeContactModal="closeContactModal"
+    />
   </div>
 
 </template>
@@ -65,21 +67,11 @@ const burgerToggle = ref(false)
 
 const contactModalIsOpen = ref(false)
 
-
 const openContactModal = () => {
   contactModalIsOpen.value = true
 }
 
+const closeContactModal = () => {
+  contactModalIsOpen.value = false
+}
 </script>
-
-<style scoped>
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
-}
-</style>
