@@ -15,7 +15,7 @@
         <input
             class="block border-2 mx-auto w-full rounded p-2"
             type="text"
-            placeholder="Введите имя..."
+            placeholder="Введите имя"
             v-model="form.name"
             id="validationUsername"
         >
@@ -27,6 +27,15 @@
             placeholder="Номер телефона"
             v-model="form.phone"
             v-mask="'+7(###)###-##-##'"
+            id="validationPhone"
+        >
+      </div>
+      <div class="w-full mt-2">
+        <input
+            class="block border-2 mx-auto w-full rounded p-2"
+            type="text"
+            placeholder="Кратко опишите суть обращения"
+            v-model="form.descr"
             id="validationPhone"
         >
       </div>
@@ -49,7 +58,8 @@ export default {
   data: () => ({
     form: {
       name: "",
-      phone: ""
+      phone: "",
+      descr: ""
     }
   }),
   directives: {mask},
@@ -65,7 +75,8 @@ export default {
 
       let message = `<b>Заявка с сайта:</b>\n`;
       message += `<b>Отправитель: </b> ${this.form.name} \n`;
-      message += `<b>Телефон: </b> ${this.form.phone}`;
+      message += `<b>Телефон: </b> ${this.form.phone} \n`;
+      message += `<b>Суть обращения: </b> ${this.form.descr}`;
 
       axios.post(URI_API, {
         chat_id: CHAT_ID,
