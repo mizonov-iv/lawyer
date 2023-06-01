@@ -12,7 +12,7 @@
         </svg>
       </div>
       <a href="/" class="text-xl">
-        <img class="w-32" src="/logo.jpeg" alt="">
+        <img class="w-32" src="/logo.png" alt="logo">
       </a>
         <ul
             class=" w-3/4 md:w-6/12 h-screen py-10 sm:py-0 md:h-fit absolute top-0 left-0 md:static md:flex z-10 bg-gray-300 sm:bg-inherit"
